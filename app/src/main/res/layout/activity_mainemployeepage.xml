@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <!-- Calendar button -->
+    <Button
+        android:id="@+id/calendar_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calendar"
+        android:background="@color/white"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp" />
+
+    <!-- Notification button-->
+    <Button
+        android:id="@+id/notification_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notifications"
+        android:background="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp" />
+
+    <!-- Settings button -->
+    <Button
+        android:id="@+id/settings_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:background="@color/white"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp" />
+
+<!-- welcome message-->
+    <TextView
+        android:id="@+id/welcome_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calendar_button"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="30dp"
+        android:text="Hello Josh"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome_message"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Request holiday button -->
+        <Button
+            android:id="@+id/request_holiday_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Request Holiday"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:padding="25dp"/>
+
+        <!-- View remaining allowance button -->
+        <Button
+            android:id="@+id/view_remaining_allowance_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Remaining Allowance"
+            android:layout_marginBottom="10dp"
+            android:padding="25dp"
+            android:textSize="18sp"/>
+
+        <!-- View/edit details button -->
+        <Button
+            android:id="@+id/view_edit_details_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View/Edit My Details"
+            android:padding="25dp"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <!-- Sign Out -->
+    <Button
+        android:id="@+id/sign_out_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Out"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp" />
+
+</RelativeLayout>
