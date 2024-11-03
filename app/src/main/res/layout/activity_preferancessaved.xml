@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+    <!-- Top bar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp">
+
+        <!-- Calendar button -->
+        <Button
+            android:id="@+id/calendar_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calendar"
+            android:background="#FFFFFF"
+            android:layout_alignParentStart="true" />
+
+        <!-- Notification button -->
+        <Button
+            android:id="@+id/notification_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notifications"
+            android:background="#FFFFFF"
+            android:layout_centerHorizontal="true" />
+
+        <!-- Settings button -->
+        <Button
+            android:id="@+id/settings_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:background="#FFFFFF"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <!-- Centred box -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:padding="24dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <!-- Confirmation -->
+        <TextView
+            android:id="@+id/preferences_saved_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your preferences have been saved."
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Go to Main button -->
+        <Button
+            android:id="@+id/go_to_main_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go to Main"
+            android:background="#4A4A4A"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Sign Out -->
+    <Button
+        android:id="@+id/sign_out_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Out"
+        android:layout_gravity="end"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
+        android:layout_margin="16dp" />
+</LinearLayout>
