@@ -17,7 +17,7 @@
             android:id="@+id/calendar_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Calendar"
+            android:text="@string/calendar"
             android:background="#FFFFFF"
             android:layout_alignParentStart="true" />
 
@@ -26,7 +26,7 @@
             android:id="@+id/notification_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Notifications"
+            android:text="@string/notifications"
             android:background="#FFFFFF"
             android:layout_centerHorizontal="true" />
 
@@ -35,7 +35,7 @@
             android:id="@+id/settings_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Settings"
+            android:text="@string/settings"
             android:background="#FFFFFF"
             android:layout_alignParentEnd="true" />
     </RelativeLayout>
@@ -44,7 +44,7 @@
         android:id="@+id/title_holiday_allowance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Holiday Allowance"
+        android:text="@string/holiday_allowance"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_marginBottom="20dp"
@@ -55,7 +55,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Annual Allowance"
+        android:text="@string/annual_allowance"
         android:textSize="18sp"
         android:textColor="#000000"
         android:layout_marginBottom="8dp" />
@@ -64,18 +64,19 @@
         android:id="@+id/annual_allowance_display"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Annual Allowance"
+        android:hint="@string/annual_allowance"
         android:inputType="none"
         android:focusable="false"
         android:background="#E0E0E0"
         android:padding="10dp"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginBottom="16dp"
+        android:autofillHints="none"/>
 
     <!-- Remaining allowance -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Remaining Allowance"
+        android:text="@string/remaining_allowance"
         android:textSize="18sp"
         android:textColor="#000000"
         android:layout_marginBottom="8dp" />
@@ -84,18 +85,19 @@
         android:id="@+id/remaining_allowance_display"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Remaining Allowance"
+        android:hint="@string/remaining_allowance"
         android:inputType="none"
         android:focusable="false"
         android:background="#E0E0E0"
         android:padding="10dp"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginBottom="16dp"
+        android:autofillHints="none"/>
     <!--Button for upcoming holidays-->
      <Button
         android:id="@+id/upcoming_holidays_button"
          android:layout_width="match_parent"
          android:layout_height="wrap_content"
-         android:text="Upcoming Holidays"
+         android:text="@string/upcoming_holidays"
          android:layout_marginBottom="10dp"
          android:background="@color/white" />
     <!-- Button for previous holidays -->
@@ -103,7 +105,7 @@
         android:id="@+id/previous_holidays_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Previous Holidays"
+        android:text="@string/previous_holidays"
         android:layout_marginBottom="10dp"
         android:background="@color/white" />
 
@@ -112,7 +114,7 @@
         android:id="@+id/rejected_holiday_requests_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Rejected Holiday Requests"
+        android:text="@string/rejected_holiday_requests"
         android:layout_marginBottom="10dp"
         android:background="@color/white" />
 
@@ -121,7 +123,7 @@
         android:id="@+id/pending_holiday_requests_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Pending Holiday Requests"
+        android:text="@string/pending_holiday_requests"
         android:background="@color/white" />
 
     <!-- buttons down -->
@@ -141,7 +143,7 @@
             android:id="@+id/back_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="← Back"
+            android:text="@string/back"
             android:background="#FFFFFF"
             android:textColor="#000000"
             android:layout_alignParentStart="true" />
@@ -151,7 +153,7 @@
             android:id="@+id/sign_out_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sign Out"
+            android:text="@string/sign_out"
             android:background="#FFFFFF"
             android:textColor="#000000"
             android:layout_alignParentEnd="true" />

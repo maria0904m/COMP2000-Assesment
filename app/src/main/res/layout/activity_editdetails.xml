@@ -45,7 +45,7 @@
         android:id="@+id/title_edit_details"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Edit Your Details"
+        android:text="@string/your_details"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_marginBottom="20dp"
