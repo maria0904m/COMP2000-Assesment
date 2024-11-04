@@ -17,7 +17,7 @@
             android:id="@+id/calendar_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/calendar"
+            android:text="Calendar"
             android:background="#FFFFFF"
             android:layout_alignParentStart="true" />
 
@@ -26,7 +26,7 @@
             android:id="@+id/notification_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/notifications"
+            android:text="Notifications"
             android:background="#FFFFFF"
             android:layout_centerHorizontal="true" />
 
@@ -35,7 +35,7 @@
             android:id="@+id/settings_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/settings"
+            android:text="Settings"
             android:background="#FFFFFF"
             android:layout_alignParentEnd="true" />
     </RelativeLayout>
@@ -45,7 +45,7 @@
         android:id="@+id/title_settings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text='@string/settings_2'
+        android:text="SETTINGS"
         android:textSize="24sp"
         android:textStyle="bold"
         android:textColor="#000000"
@@ -67,7 +67,7 @@
             android:id="@+id/notification_permission_message"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/allow_notifications"
+            android:text="Allow Notifications?"
             android:textSize="24sp"
             android:textColor="#000000"
             android:layout_marginBottom="20dp"
@@ -85,50 +85,30 @@
                 android:id="@+id/no_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/no"
+                android:text="No"
                 android:background="#4A4A4A"
                 android:textColor="#FFFFFF"
-                android:layout_marginEnd="16dp"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:layout_marginEnd="16dp" />
 
             <!-- Yes Button -->
             <Button
                 android:id="@+id/yes_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/yes"
+                android:text="Yes"
                 android:background="#4A4A4A"
-                android:textColor="#FFFFFF"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:textColor="#FFFFFF" />
         </LinearLayout>
     </LinearLayout>
 
-    <!-- Bottom bar -->
-    <RelativeLayout
-        android:layout_width="match_parent"
+    <!-- Sign out -->
+    <Button
+        android:id="@+id/sign_out_button"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom">
-
-        <!-- Back button -->
-        <Button
-            android:id="@+id/back_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/back"
-            android:background="#FFFFFF"
-            android:textColor="#000000"
-            android:layout_alignParentStart="true"
-            style="?android:attr/buttonBarButtonStyle" />
-
-        <!-- Sign out -->
-        <Button
-            android:id="@+id/sign_out_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/sign_out"
-            android:background="#FFFFFF"
-            android:textColor="#000000"
-            android:layout_alignParentEnd="true"
-            style="?android:attr/buttonBarButtonStyle" />
-    </RelativeLayout>
+        android:text="Sign Out"
+        android:layout_gravity="end"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
+        android:layout_margin="16dp" />
 </LinearLayout>
