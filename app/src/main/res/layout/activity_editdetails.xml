@@ -12,35 +12,34 @@
         android:layout_height="wrap_content"
         android:paddingBottom="16dp">
 
-        <!-- Calendar button -->
         <Button
             android:id="@+id/calendar_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Calendar"
+            android:text="@string/calendar"
             android:background="#FFFFFF"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            style="?android:attr/borderlessButtonStyle"/>
 
-        <!-- Notification button-->
         <Button
             android:id="@+id/notification_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Notifications"
+            android:text="@string/notifications"
             android:background="#FFFFFF"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            style="?android:attr/borderlessButtonStyle"/>
 
-        <!-- Settings button-->
         <Button
             android:id="@+id/settings_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Settings"
+            android:text="@string/settings"
             android:background="#FFFFFF"
-            android:layout_alignParentEnd="true" />
+            android:layout_alignParentEnd="true"
+            style="?android:attr/borderlessButtonStyle"/>
     </RelativeLayout>
 
-    <!-- title -->
     <TextView
         android:id="@+id/title_edit_details"
         android:layout_width="wrap_content"
@@ -52,7 +51,6 @@
         android:padding="8dp"
         android:textColor="#000000" />
 
-    <!-- Edit box-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -63,14 +61,12 @@
         android:elevation="4dp"
         android:layout_marginBottom="20dp">
 
-        <!-- Names -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginBottom="12dp">
 
-            <!-- First Name -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -80,7 +76,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="First Name"
+                    android:text="@string/first_name"
                     android:textSize="18sp"
                     android:layout_marginBottom="8dp"
                     android:textColor="#000000" />
@@ -90,7 +86,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#E0E0E0"
-                    android:padding="10dp" />
+                    android:padding="10dp"
+                    android:inputType="textPersonName"
+                    android:autofillHints="givenName"
+                    android:hint="@string/first_name"/>
             </LinearLayout>
 
             <Space
@@ -106,7 +105,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Last Name"
+                    android:text="@string/last_name"
                     android:textSize="18sp"
                     android:layout_marginBottom="8dp"
                     android:textColor="#000000" />
@@ -116,15 +115,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#E0E0E0"
-                    android:padding="10dp" />
+                    android:padding="10dp"
+                    android:inputType="textPersonName"
+                    android:autofillHints="familyName"
+                    android:hint="@string/last_name"/>
             </LinearLayout>
         </LinearLayout>
 
-        <!-- Date of birth -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Date of Birth"
+            android:text="@string/date_of_birth"
             android:textSize="18sp"
             android:layout_marginBottom="8dp"
             android:textColor="#000000" />
@@ -135,13 +136,15 @@
             android:layout_height="wrap_content"
             android:background="#E0E0E0"
             android:padding="10dp"
-            android:layout_marginBottom="12dp" />
+            android:layout_marginBottom="12dp"
+            android:inputType="date"
+            android:autofillHints="dateOfBirth"
+            android:hint="@string/date_of_birth"/>
 
-        <!-- Address -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Address"
+            android:text="@string/address"
             android:textSize="18sp"
             android:layout_marginBottom="8dp"
             android:textColor="#000000" />
@@ -152,13 +155,15 @@
             android:layout_height="wrap_content"
             android:background="#E0E0E0"
             android:padding="10dp"
-            android:layout_marginBottom="12dp" />
+            android:layout_marginBottom="12dp"
+            android:inputType="textMultiLine"
+            android:autofillHints="addressLine"
+            android:hint="@string/address"/>
 
-        <!-- Postcode -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Postcode"
+            android:text="@string/postcode"
             android:textSize="18sp"
             android:layout_marginBottom="8dp"
             android:textColor="#000000" />
@@ -169,13 +174,15 @@
             android:layout_height="wrap_content"
             android:background="#E0E0E0"
             android:padding="10dp"
-            android:layout_marginBottom="12dp" />
+            android:layout_marginBottom="12dp"
+            android:inputType="textPostalAddress"
+            android:autofillHints="postalCode"
+            android:hint="@string/postcode"/>
 
-        <!-- Email -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Email"
+            android:text="@string/email"
             android:textSize="18sp"
             android:layout_marginBottom="8dp"
             android:textColor="#000000" />
@@ -186,13 +193,15 @@
             android:layout_height="wrap_content"
             android:background="#E0E0E0"
             android:padding="10dp"
-            android:layout_marginBottom="12dp" />
+            android:layout_marginBottom="12dp"
+            android:inputType="textEmailAddress"
+            android:autofillHints="emailAddress"
+            android:hint="@string/email"/>
 
-        <!-- Phone no-->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Phone Number"
+            android:text="@string/phone_number"
             android:textSize="18sp"
             android:layout_marginBottom="8dp"
             android:textColor="#000000" />
@@ -203,7 +212,10 @@
             android:layout_height="wrap_content"
             android:background="#E0E0E0"
             android:padding="10dp"
-            android:layout_marginBottom="12dp" />
+            android:layout_marginBottom="12dp"
+            android:inputType="phone"
+            android:autofillHints="telephoneNumber"
+            android:hint="@string/phone_number"/>
     </LinearLayout>
 
     <LinearLayout
@@ -212,54 +224,54 @@
         android:orientation="horizontal"
         android:layout_marginBottom="20dp">
 
-        <!-- Discard changes button -->
         <Button
             android:id="@+id/discard_changes_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Discard Changes"
+            android:text="@string/discard_changes"
             android:background="#FFFFFF"
             android:textColor="#000000"
-            android:layout_marginEnd="8dp" />
+            android:layout_marginEnd="8dp"
+            style="?android:attr/borderlessButtonStyle"/>
 
-        <!-- Save button-->
         <Button
             android:id="@+id/save_changes_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Save Changes"
+            android:text="@string/save_changes"
             android:background="#FFFFFF"
             android:textColor="#000000"
-            android:layout_marginStart="8dp" />
+            android:layout_marginStart="8dp"
+            style="?android:attr/borderlessButtonStyle"/>
     </LinearLayout>
 
-    <!-- Bottom bar -->
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom">
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
 
-        <!-- Back button -->
         <Button
             android:id="@+id/back_button"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="← Back"
+            android:layout_weight="1"
+            android:text="@string/back"
             android:background="#FFFFFF"
             android:textColor="#000000"
-            android:layout_alignParentStart="true" />
+            style="?android:attr/borderlessButtonStyle" />
 
-        <!-- Sign out -->
         <Button
             android:id="@+id/sign_out_button"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Sign Out"
+            android:layout_weight="1"
+            android:text="@string/sign_out"
             android:background="#FFFFFF"
             android:textColor="#000000"
-            android:layout_alignParentEnd="true" />
-    </RelativeLayout>
+            style="?android:attr/borderlessButtonStyle" />
+    </LinearLayout>
 
 </LinearLayout>

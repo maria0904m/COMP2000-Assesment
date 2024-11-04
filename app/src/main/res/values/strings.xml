@@ -34,4 +34,13 @@
     <string name="no">No</string>
     <string name="yes">Yes</string>
     <string name="settings_2">Settings</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="address">Address</string>
+    <string name="postcode">Postcode</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="discard_changes">Discard Changes</string>
+    <string name="save_changes">Save Changes</string>
 </resources>
