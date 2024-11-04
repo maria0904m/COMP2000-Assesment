@@ -35,7 +35,7 @@
             android:id="@+id/settings_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="string/settings"
+            android:text="@string/settings"
             android:background="#FFFFFF"
             android:layout_alignParentEnd="true" />
     </RelativeLayout>
@@ -45,7 +45,7 @@
         android:id="@+id/title_notifications"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="NOTIFICATIONS"
+        android:text="@string/notifications"
         android:textSize="24sp"
         android:textStyle="bold"
         android:textColor="#000000"
@@ -76,14 +76,14 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Request No. 123 has been approved."
+                    android:text="@string/notification_message_1"
                     android:textColor="#000000" />
 
                 <CheckBox
                     android:id="@+id/seen_checkbox_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Seen" />
+                    android:text="@string/seen" />
             </LinearLayout>
 
             <!-- Notification eg 2 -->
@@ -99,14 +99,14 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Request No. 456 has been rejected."
+                    android:text="@string/notification_message_2"
                     android:textColor="#000000" />
 
                 <CheckBox
                     android:id="@+id/seen_checkbox_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Seen" />
+                    android:text="@string/seen" />
             </LinearLayout>
 
 

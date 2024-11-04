@@ -44,7 +44,7 @@
         android:id="@+id/title_pending_holidays"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pending Holiday Requests"
+        android:text="@string/pending_holiday_requests"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_marginBottom="20dp"
@@ -74,7 +74,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Start Date: 01/01/2024"
+                    android:text="@string/start_date_1"
                     android:background="#FFFFFF"
                     android:padding="10dp"
                     android:layout_marginEnd="16dp" />
@@ -83,7 +83,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="End Date: 05/01/2024"
+                    android:text="@string/end_date_1"
                     android:background="#FFFFFF"
                     android:padding="10dp" />
             </LinearLayout>
@@ -100,7 +100,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Start Date: 10/02/2024"
+                    android:text="@string/start_date_2"
                     android:background="#FFFFFF"
                     android:padding="10dp"
                     android:layout_marginEnd="16dp" />
@@ -109,7 +109,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="End Date: 15/02/2024"
+                    android:text="@string/end_date_2"
                     android:background="#FFFFFF"
                     android:padding="10dp" />
             </LinearLayout>

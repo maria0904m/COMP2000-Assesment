@@ -43,4 +43,28 @@
     <string name="phone_number">Phone Number</string>
     <string name="discard_changes">Discard Changes</string>
     <string name="save_changes">Save Changes</string>
+    <string name="request_holiday">Request Holiday</string>
+    <string name="start_date">Start Date</string>
+    <string name="enter_start_date">Enter start date</string>
+    <string name="end_date">End Date</string>
+    <string name="enter_end_date">Enter end date</string>
+    <string name="how_many_days">How Many Days</string>
+    <string name="enter_number_of_days">Enter number of days</string>
+    <string name="notes">Notes</string>
+    <string name="enter_notes">Enter any notes</string>
+    <string name="submit">Submit</string>
+    <string name="preferences_saved">Preferences have been saved</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="login">LOG IN</string>
+    <string name="notification_message_1">Request No. 123 has been approved.</string>
+    <string name="notification_message_2">Request No. 456 has been rejected.</string>
+    <string name="seen">Seen</string>
+    <string name="welcome_message">Hello Josh</string>
+    <string name="view_edit_details">View/Edit My Details</string>
+    <string name="view_remaining_allowance">View Remaining Allowance</string>
+    <string name="admin">Admin</string>
+    <string name="employee">Employee</string>
+    <string name="holiday_request_successful">Holiday has been requested successfully</string>
+
 </resources>
