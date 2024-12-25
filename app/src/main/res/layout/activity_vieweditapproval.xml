@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+    <!-- Top bar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp">
+
+        <!-- Calendar-->
+        <Button
+            android:id="@+id/calendar_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calendar"
+            android:background="#FFFFFF"
+            android:layout_alignParentStart="true"
+            style="?android:attr/borderlessButtonStyle" />
+
+        <!-- Notification button -->
+        <Button
+            android:id="@+id/notification_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notifications"
+            android:background="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            style="?android:attr/borderlessButtonStyle" />
+
+        <!-- Settings-->
+        <Button
+            android:id="@+id/settings_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:background="#FFFFFF"
+            android:layout_alignParentEnd="true"
+            style="?android:attr/borderlessButtonStyle" />
+    </RelativeLayout>
+
+    <!-- title -->
+    <TextView
+        android:id="@+id/confirmation_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmation"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        android:padding="8dp" />
+
+    <!-- confirmation box -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:padding="16dp"
+        android:elevation="4dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/confirmation_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Are you sure you want to edit employee details?"
+            android:textSize="22sp"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:padding="10dp" />
+
+        <!-- No and yes buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- No button -->
+            <Button
+                android:id="@+id/no_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:background="#4A4A4A"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="16dp"
+                android:padding="12dp" />
+
+            <!-- Yes-->
+            <Button
+                android:id="@+id/yes_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:background="#4A4A4A"
+                android:textColor="#FFFFFF"
+                android:padding="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Bottom bar-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="16dp"
+        android:elevation="4dp">
+
+        <!-- Back button -->
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:layout_alignParentStart="true"
+            style="?android:attr/borderlessButtonStyle" />
+
+        <!-- Sign out-->
+        <Button
+            android:id="@+id/sign_out_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Out"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:layout_alignParentEnd="true"
+            style="?android:attr/borderlessButtonStyle" />
+    </RelativeLayout>
+
+</LinearLayout>
