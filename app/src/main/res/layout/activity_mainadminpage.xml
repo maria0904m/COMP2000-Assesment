@@ -1,71 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F5F5F5">
 
-    <!-- top bar-->
-    <RelativeLayout
-        android:id="@+id/top_bar"
-        android:layout_width="match_parent"
+    <!-- Calendar-->
+    <Button
+        android:id="@+id/calendar_button"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:paddingBottom="16dp"
-        android:background="@android:color/white"
-        android:elevation="4dp">
+        android:text="Calendar"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp"
+        android:background="@android:color/white" />
 
-        <!-- Calendar-->
-        <Button
-            android:id="@+id/calendar_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Calendar"
-            android:background="#FFFFFF"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="16dp"
-            style="?android:attr/borderlessButtonStyle" />
+    <!-- Notification button -->
+    <Button
+        android:id="@+id/notification_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notifications"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@android:color/white" />
 
-        <!-- Notifications-->
-        <Button
-            android:id="@+id/notification_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Notifications"
-            android:background="#FFFFFF"
-            android:layout_centerHorizontal="true"
-            style="?android:attr/borderlessButtonStyle" />
+    <!-- Settings button-->
+    <Button
+        android:id="@+id/settings_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:background="@android:color/white" />
 
-        <!-- Settings button -->
-        <Button
-            android:id="@+id/settings_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Settings"
-            android:background="#FFFFFF"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="16dp"
-            style="?android:attr/borderlessButtonStyle" />
-    </RelativeLayout>
-
-    <!-- welcome message -->
+    <!-- Welcome message-->
     <TextView
         android:id="@+id/welcome_message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/top_bar"
+        android:layout_below="@id/calendar_button"
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
         android:text="Hi, Admin"
         android:textSize="24sp"
-        android:textStyle="bold"
-        android:textColor="@android:color/black" />
+        android:textStyle="bold" />
 
-    <!-- scrollable employee list-->
+    <!-- Scrollable employee list -->
     <ScrollView
         android:id="@+id/employee_list_scrollview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="400dp"
         android:layout_below="@id/welcome_message"
         android:layout_marginTop="16dp"
         android:padding="16dp">
@@ -76,7 +62,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- eg employee 1-->
+            <!-- Employee  1 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -85,6 +71,7 @@
                 android:layout_marginBottom="8dp"
                 android:background="@drawable/employee_item_bg">
 
+                <!-- Employee name -->
                 <TextView
                     android:id="@+id/employee_name"
                     android:layout_width="0dp"
@@ -95,23 +82,25 @@
                     android:textColor="@android:color/black"
                     android:padding="4dp" />
 
+                <!-- View icon -->
                 <ImageView
                     android:id="@+id/view_icon"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/ic_view"
-                    android:contentDescription="View Icon"
+                    android:contentDescription="View Employee"
                     android:layout_marginEnd="16dp" />
 
+                <!-- Delete icon -->
                 <ImageView
                     android:id="@+id/delete_icon"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/ic_delete"
-                    android:contentDescription="Delete Icon" />
+                    android:contentDescription="Delete Employee" />
             </LinearLayout>
 
-            <!-- eg emplyee 2-->
+            <!-- Employee 2 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -120,6 +109,7 @@
                 android:layout_marginBottom="8dp"
                 android:background="@drawable/employee_item_bg">
 
+                <!-- Employee name -->
                 <TextView
                     android:id="@+id/employee_name_2"
                     android:layout_width="0dp"
@@ -130,37 +120,37 @@
                     android:textColor="@android:color/black"
                     android:padding="4dp" />
 
+                <!-- View icon -->
                 <ImageView
                     android:id="@+id/view_icon_2"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/ic_view"
-                    android:contentDescription="View Icon"
+                    android:contentDescription="View Employee"
                     android:layout_marginEnd="16dp" />
 
+                <!-- Delete icon -->
                 <ImageView
                     android:id="@+id/delete_icon_2"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/ic_delete"
-                    android:contentDescription="Delete Icon" />
+                    android:contentDescription="Delete Employee" />
             </LinearLayout>
-
-
         </LinearLayout>
     </ScrollView>
 
-
+    <!-- Holiday requests section -->
     <LinearLayout
-        android:id="@+id/buttons_container"
+        android:id="@+id/holiday_requests_section"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/employee_list_scrollview"
+        android:layout_below="@id/employee_list_scrollview"
         android:layout_marginTop="16dp"
         android:orientation="vertical"
         android:paddingHorizontal="16dp">
 
-        <!-- Holiday requests button -->
+        <!-- Holiday requests buttom -->
         <Button
             android:id="@+id/holiday_requests_button"
             android:layout_width="match_parent"
@@ -170,7 +160,7 @@
             android:layout_marginBottom="10dp"
             android:padding="16dp" />
 
-        <!-- Add employee button -->
+        <!-- Add employee -->
         <Button
             android:id="@+id/add_employee_button"
             android:layout_width="match_parent"
@@ -180,15 +170,14 @@
             android:padding="16dp" />
     </LinearLayout>
 
-    <!-- Bottom bar-->
+    <!-- Bottom bar -->
     <RelativeLayout
         android:id="@+id/bottom_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:background="#FFFFFF"
-        android:padding="16dp"
-        android:elevation="4dp">
+        android:padding="16dp">
 
         <!-- Back button -->
         <Button
@@ -198,10 +187,9 @@
             android:text="Back"
             android:background="#FFFFFF"
             android:textColor="#000000"
-            android:layout_alignParentStart="true"
-            style="?android:attr/borderlessButtonStyle" />
+            android:layout_alignParentStart="true" />
 
-        <!-- Sign out -->
+        <!-- Sign out-->
         <Button
             android:id="@+id/sign_out_button"
             android:layout_width="wrap_content"
@@ -209,8 +197,6 @@
             android:text="Sign Out"
             android:background="#FFFFFF"
             android:textColor="#000000"
-            android:layout_alignParentEnd="true"
-            style="?android:attr/borderlessButtonStyle" />
+            android:layout_alignParentEnd="true" />
     </RelativeLayout>
-
 </RelativeLayout>
