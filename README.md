@@ -18,13 +18,14 @@ JDK: Versi 8 or above.
 Installation Procedure
 Clone the Repository:
 
-bash
-Copy code
 git clone https://github.com/your-username/holiday-management-app.git
+
 Open the Project in Android Studio:
 
 Open up Android Studio and click on Open an Existing Project.
+
 Find the project that was cloned, then open the folder.
+
 Build the Project:
 
 Android Studio will automatically download all dependencies.
@@ -73,9 +74,13 @@ Improved UI/UX:
 
 Make the UI smooth with nice visuals and user-friendly. You may add any animation and active responses/ feedback.
 Contributing
+
 This is an academic project, but you are very welcome to join improving the developing process. If you wish to contribute, you can:
 
 Fork the repo.
 Create a feature branch.
+
 Do your thing.
+
 Push changes and make a pull request.
+
