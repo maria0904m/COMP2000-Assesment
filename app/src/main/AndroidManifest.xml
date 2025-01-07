@@ -12,17 +12,80 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.COMP2000"
         tools:targetApi="31">
+
+        <!-- LoginActivity - The main entry point -->
         <activity
-            android:name=".MainActivity"
+            android:name="com.comp2000.LoginActivity"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.COMP2000">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- MainAdminPageActivity - Activity for Admin users -->
+        <activity
+            android:name="com.comp2000.MainAdminPageActivity"
+            android:exported="true"
+            android:theme="@style/Theme.COMP2000"/>
+
+        <!-- MainEmployeePageActivity - Activity for Employee users -->
+        <activity
+            android:name="com.comp2000.MainEmployeePageActivity"
+            android:exported="true"
+            android:theme="@style/Theme.COMP2000"/>
+
+        <!-- Activity for Viewing Employee Details -->
+        <activity
+            android:name="com.comp2000.ViewEditEmployeeActivity"
+            android:exported="true"
+            android:theme="@style/Theme.COMP2000"/>
+
+        <!-- Activity for Handling Holiday Requests -->
+        <activity
+            android:name="com.comp2000.HolidayRequestsPageActivity"
+            android:exported="true"
+            android:theme="@style/Theme.COMP2000"/>
+
+        <!-- Activity for Adding New Employees -->
+        <activity
+            android:name="com.comp2000.AddNewEmployeeActivity"
+            android:exported="true"
+            android:theme="@style/Theme.COMP2000"/>
+
+        <!-- Activity for Viewing/Editing Employee's Details -->
+        <activity
+            android:name="com.comp2000.EditDetailsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.COMP2000"/>
+
+        <!-- Activity for Viewing Holiday Allowance -->
+        <activity
+            android:name="com.comp2000.HolidayAllowanceActivity"
+            android:exported="true"
+            android:theme="@style/Theme.COMP2000"/>
+
+        <!-- Activity for Calendar -->
+        <activity
+            android:name="com.comp2000.CalendarActivity"
+            android:exported="true"
+            android:theme="@style/Theme.COMP2000"/>
+
+        <!-- Activity for Notifications -->
+        <activity
+            android:name="com.comp2000.NotificationActivity"
+            android:exported="true"
+            android:theme="@style/Theme.COMP2000"/>
+
+        <!-- Activity for Settings -->
+        <activity
+            android:name="com.comp2000.SettingsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.COMP2000"/>
+
     </application>
 
 </manifest>
+
+
